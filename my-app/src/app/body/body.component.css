@@ -1,0 +1,30 @@
+.body_container {
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: green;
+	flex-direction: column;
+}
+
+.body_title {
+	font-size: 40px;
+}
+
+.body_subtitle {
+	font-size: 40px;
+	color: red;
+}
+
+.body_button {
+	background-color: yellow;
+	border: 2px solid black;
+}
+
+.body_count {
+	border: 2px solid black;
+	background: white;
+	padding: 12px;
+	font-size: 30px;
+	border-radius: 20px;
+}

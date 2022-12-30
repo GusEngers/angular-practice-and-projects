@@ -1,0 +1,13 @@
+.footer_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 15vh;
+	background-color: rgba(0, 57, 23, 1.0);
+}
+
+.footer_container {
+	font-family: cursive;
+	font-size: 10px;
+	color: white;
+}

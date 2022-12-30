@@ -1,0 +1,7 @@
+<div class="body_container">
+	<button class="body_button" (click)="show= !show">MOSTRAR SUBTITULO</button>
+	<h1 class="body_title">ESTE ES EL BODY</h1>
+	<h2 class="body_subtitle" *ngIf="show">ESTE ES EL SUBTITULO</h2>
+	<button class="body_button" (click)="count= count + 1">SUBIR CONTADOR</button>
+	<p class="body_count">{{count}}</p>
+</div>

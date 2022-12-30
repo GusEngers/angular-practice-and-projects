@@ -1,0 +1,11 @@
+.header_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 15vh;
+	background-color: rgb(200, 130, 20);
+}
+
+.header_title {
+	font-size: 20px;
+}
