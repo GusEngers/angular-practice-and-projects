@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="title-container">
+		<h1 class="title">APP CONTADOR</h1>
+	</div>
+	<div class="count-container">
+		<span>{{count}}</span>
+	</div>
+	<div class="buttons-container">
+		<button class="button" (click)="count = count - 2" [disabled]="(count - 2) < -100">-2</button>
+		<button class="button" (click)="count = count - 1" [disabled]="count <= -100">-</button>
+		<button class="button" (click)="count = 0">0</button>
+		<button class="button" (click)="count = count + 1" [disabled]="count >= 100">+</button>
+		<button class="button" (click)="count = count + 2" [disabled]="(count + 2) > 100">+2</button>
+	</div>
+	<div class="text-container">
+		<p class="text-zero" *ngIf="count == 0">El valor es 0 elige alguna operación</p>
+		<p class="text-min" *ngIf="count == -100">Llegaste al valor mínimo</p>
+		<p class="text-max" *ngIf="count == 100">Llegaste al valor máximo</p>
+		<p class="text-even" *ngIf="(count % 2 == 0) && (count != 0)">Este número es PAR</p>
+		<p class="text-odd" *ngIf="(count % 2 != 0) && (count != 0)">Este número es IMPAR</p>
+		<p class="text-continue" *ngIf="(count >= -99) && (count <= 99) && (count != 0)">Continua</p>
+	</div>
+</div>
