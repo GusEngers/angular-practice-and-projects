@@ -1,7 +1,15 @@
-<div class="body_container">
-	<button class="body_button" (click)="show= !show">MOSTRAR SUBTITULO</button>
-	<h1 class="body_title">ESTE ES EL BODY</h1>
-	<h2 class="body_subtitle" *ngIf="show">ESTE ES EL SUBTITULO</h2>
+<div class="body_container asdf">
+	<button class="body_button" (click)="show= !show">MOSTRAR</button>
+	<h1 class="body_title" *ngIf="show; else showTwo">ESTE ES EL BODY</h1>
+
+	<ng-template #showTwo>
+		<h2 class="body_subtitle" [ngClass]="'color'">ESTE ES EL SUBTITULO</h2>
+	</ng-template>
+
+	<ul *ngFor="let saludo of saludos">
+		<li>{{saludo}}</li>
+	</ul>
+	
 	<button class="body_button" (click)="count= count + 1">SUBIR CONTADOR</button>
 	<p class="body_count">{{count}}</p>
 </div>
