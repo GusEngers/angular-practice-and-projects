@@ -1,9 +1,14 @@
 <div>
 	<div class="navigation-container">
 		<h1 class="navigation-title">Colección de proyectos con Angular</h1>
-		<p class="navigation-home">Inicio</p>
+		<a class="navigation-home" routerLink="/" routerLinkActive="active">Inicio</a>
 	</div>
 
-	<router-outlet></router-outlet>
+	<div class="body-container">
+		<router-outlet></router-outlet>	
+	</div>
 
+	<div class="footer-container">
+		Footer
+	</div>
 </div>
