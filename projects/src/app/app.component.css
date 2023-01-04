@@ -1,0 +1,41 @@
+.container-general {
+	background-color: #0728A3FF;
+}
+
+.navigation-container {
+	background-color: black;
+	padding: 10px 0;
+	font-family: Arial;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navigation-title {
+	margin: 0;
+	color: white;
+	text-align: center;
+}
+
+.navigation-home {
+	margin: 0;
+	color: white;
+	text-align: center;
+	width: 30%;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 2px solid white;
+	padding: 5px 0;
+	background-color: #212121FF;
+	text-decoration: none;
+}
+
+.navigation-home:hover {
+	background-color: #BABABAFF;
+	color: black;
+}
+
+.body-container {
+	min-height: 85vh;
+}
