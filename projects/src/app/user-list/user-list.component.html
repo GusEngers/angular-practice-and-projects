@@ -1,0 +1,24 @@
+<div>
+	<div>
+		<h1>Usuarios Activos</h1>
+		<ul *ngFor="let user of users">
+			<app-user
+				*ngIf="user.active"
+				[name]="user.name"
+				[status]="user.active"
+			>
+			</app-user>
+		</ul>
+	</div>
+	<div>
+		<h1>Usuarios Inactivos</h1>
+		<ul *ngFor="let user of users">
+			<app-user
+				*ngIf="!user.active"
+				[name]="user.name"
+				[status]="user.active"
+			>
+			</app-user>
+		</ul>
+	</div>
+</div>
