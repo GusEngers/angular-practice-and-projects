@@ -1,5 +1,9 @@
 <div>
 	<div>
+		<form (submit)="onSubmit($event)">
+			<input type="text" id="input-name" value="" (change)="onChange($event)" placeholder="Inserta un nombre" />
+			<input type="submit" name="Enviar"/>
+		</form>
 		<h1>Usuarios Activos</h1>
 		<ul *ngFor="let user of users">
 			<app-user
