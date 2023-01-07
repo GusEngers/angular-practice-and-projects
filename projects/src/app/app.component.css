@@ -2,6 +2,10 @@
 	background-color: #0728A3FF;
 }
 
+.example-spacer {
+  flex: 1 1 auto;
+}
+
 .navigation-container {
 	background-color: black;
 	padding: 10px 0;

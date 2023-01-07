@@ -1,8 +1,30 @@
-<div class="container-general">
-	<div class="navigation-container">
-		<h1 class="navigation-title">Colección de proyectos con Angular</h1>
-		<a class="navigation-home" routerLink="/" routerLinkActive="active">Inicio</a>
-	</div>
+<div>
+	<mat-toolbar>
+	  
+	  <span>Colección de mini-proyectos con Angular</span>
+	  <span class="example-spacer"></span>
+	  <button
+	  	mat-icon-button class="example-icon"
+	  	aria-label="Example icon-button with home icon"
+	  	routerLink="/"
+	  	routerLinkActive="active"
+	  >
+	    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home">Inicio</mat-icon>
+	  </button>
+	  <button
+	  	mat-icon-button class="example-icon"
+	  	aria-label="Example icon-button with person_pin icon"
+	  >
+	  	<mat-icon aria-hidden="false" aria-label="Example person_pin icon" fontIcon="person_pin"> person_pin</mat-icon>
+	  </button>
+	  <button
+	  	mat-icon-button class="example-icon"
+	  	aria-label="Example icon-button with feedback icon"
+	  >
+	  	<mat-icon aria-hidden="false" aria-label="Example feedback icon" fontIcon="feedback">feedback</mat-icon>
+	  </button>
+	</mat-toolbar>
+
 
 	<div class="body-container">
 		<router-outlet></router-outlet>	
