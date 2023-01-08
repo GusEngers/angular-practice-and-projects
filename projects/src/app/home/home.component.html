@@ -1,18 +1,29 @@
-<div class="home-container">
-	<div class="image-conatiner">
-		<img
-			src="../../assets/angular-logo.svg"
-			height="430px"
-		/>	
-	</div>
-	<div class="links-container">
-		<ul class="list-links">
-			<li>
-				<a class="link" routerLink="/contador" routerLinkActive="active" >Contador</a>
-			</li>
-			<li>
-				<a class="link" routerLink="user-list" routerLinkActive="active" >User List</a>
-			</li>
-		</ul>
-	</div>
-</div>
+<mat-tab-group>
+	<!-- Seccion de proyectos -->
+	<mat-tab label="Proyectos">
+		<!-- Resumen -->
+		<mat-card class="card-edit">
+			<img mat-card-xl-image src="../../assets/angular-logo.svg" />
+			<mat-card-content>
+				En esta página dispongo de distintos proyectos realizados en mi camino
+				de aprendizaje con Angular y Angular Material con algunas modificaciones
+				hechas con CSS. Cada proyecto cumple con alguna funcionalidad.
+			</mat-card-content>
+		</mat-card>
+		<!-- Lista de proyectos -->
+		<mat-grid-list cols="3" rowHeight="2:1">
+			<mat-grid-tile *ngFor="let project of projects">
+				<mat-card>
+					<mat-card-actions>
+						<button mat-button routerLink="{{ project.link }}">
+							{{ project.name }}
+						</button>
+					</mat-card-actions>
+				</mat-card>
+			</mat-grid-tile>
+		</mat-grid-list>
+	</mat-tab>
+
+	<!-- Seccion de contacto -->
+	<mat-tab label="Contacto"> Content 3 </mat-tab>
+</mat-tab-group>
