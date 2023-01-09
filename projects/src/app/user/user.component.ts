@@ -4,10 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-user',
   inputs: ['name', 'status'],
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  styleUrls: ['./user.component.css'],
 })
 export class UserComponent {
-  name:string|null = null;
-  status:boolean|null = null;
+  name: string | null = null;
+  status: string | null = null;
 }
-

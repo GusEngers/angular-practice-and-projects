@@ -1,31 +1,71 @@
-<div>
-	<mat-toolbar>
-		<p>holaaa</p>
-	</mat-toolbar>
-	<div>
-		<form (submit)="onSubmit($event)">
-			<input type="text" id="input-name" value="" (change)="onChange($event)" placeholder="Inserta un nombre" />
-			<input type="submit" name="Enviar"/>
-		</form>
-		<h1>Usuarios Activos</h1>
-		<ul *ngFor="let user of users">
-			<app-user
-				*ngIf="user.active"
-				[name]="user.name"
-				[status]="user.active"
-			>
-			</app-user>
-		</ul>
-	</div>
-	<div>
-		<h1>Usuarios Inactivos</h1>
-		<ul *ngFor="let user of users">
-			<app-user
-				*ngIf="!user.active"
-				[name]="user.name"
-				[status]="user.active"
-			>
-			</app-user>
-		</ul>
-	</div>
-</div>
+<mat-tab-group>
+	<mat-tab label="LISTA DE USUARIOS">
+		<mat-grid-list cols="5" rowHeight="250px">
+			<mat-grid-tile [colspan]="1" [rowspan]="2">
+				<mat-card class="form-created">
+					<mat-card-title class="title-card"> CREA UN USUARIO </mat-card-title>
+					<mat-card-content class="inputs">
+						<label for="nombre">NOMBRE </label>
+						<mat-form-field appearance="fill">
+							<input
+								matInput
+								name="nombre"
+								id="input-name"
+								(change)="onChange($event)"
+								placeholder="Ingresa el nombre"
+								maxlength="8"
+								required />
+						</mat-form-field>
+					</mat-card-content>
+					<mat-card-content class="inputs">
+						<label for="estado">ESTADO </label>
+						<mat-radio-group [(ngModel)]="status">
+							<mat-radio-button
+								*ngFor="let list of listStatus"
+								name="estado"
+								[value]="list">
+								{{ list }}
+							</mat-radio-button>
+						</mat-radio-group>
+					</mat-card-content>
+					<mat-card-actions class="button-form">
+						<button
+							mat-button
+							(click)="onClick($event)"
+							[disabled]="!user.name.length">
+							AGREGAR
+						</button>
+					</mat-card-actions>
+				</mat-card>
+			</mat-grid-tile>
+			<mat-grid-tile [colspan]="4" [rowspan]="1">
+				<mat-card class="container-list">
+					<mat-card-title class="title-card">USUARIOS ACTIVOS</mat-card-title>
+					<div class="list-users">
+						<div *ngFor="let user of users">
+							<app-user
+								*ngIf="user.active == 'Activo'"
+								[name]="user.name"
+								[status]="user.active">
+							</app-user>
+						</div>
+					</div>
+				</mat-card>
+			</mat-grid-tile>
+			<mat-grid-tile [colspan]="4" [rowspan]="1">
+				<mat-card class="container-list">
+					<mat-card-title class="title-card">USUARIOS INACTIVOS</mat-card-title>
+					<div class="list-users">
+						<div *ngFor="let user of users">
+							<app-user
+								*ngIf="user.active == 'Inactivo'"
+								[name]="user.name"
+								[status]="user.active">
+							</app-user>
+						</div>
+					</div>
+				</mat-card>
+			</mat-grid-tile>
+		</mat-grid-list>
+	</mat-tab>
+</mat-tab-group>
