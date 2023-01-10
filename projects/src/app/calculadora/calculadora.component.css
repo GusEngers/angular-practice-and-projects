@@ -1,0 +1,51 @@
+mat-card {
+	width: 400px;
+	background-color: #c6c6c6ff;
+	height: 470px;
+}
+
+mat-card-content {
+	display: flex;
+	background-color: #303841ff;
+	margin: 20px;
+	height: 40px;
+	justify-content: center;
+	font-size: 35px;
+	border-radius: 10px;
+	color: #16d22fff;
+}
+
+.operation-show {
+	width: 30px;
+}
+
+.result-show {
+	width: 100%;
+	text-align: right;
+}
+
+mat-card-actions {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	justify-content: center;
+}
+
+mat-card-actions button {
+	font-size: 60px;
+	height: 65px;
+	margin: 10px;
+}
+
+.number_button {
+	background-color: #6b6b6bff;
+}
+
+.operation_button {
+	background-color: #eac614ff;
+}
+
+.clear_button {
+	width: 145px;
+	background-color: #d32b2bff;
+}

@@ -10,6 +10,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserComponent } from './user/user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from '../material.module';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AngularMaterialModule } from '../material.module';
     HomeComponent,
     UserListComponent,
     UserComponent,
+    CalculadoraComponent,
   ],
   imports: [
     BrowserModule,
