@@ -11,6 +11,8 @@ import { UserComponent } from './user/user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from '../material.module';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { PruebasComponent } from './components/pruebas/pruebas.component';
+import { PruebaComponent } from './components/prueba/prueba.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
     UserListComponent,
     UserComponent,
     CalculadoraComponent,
+    PruebasComponent,
+    PruebaComponent,
   ],
   imports: [
     BrowserModule,

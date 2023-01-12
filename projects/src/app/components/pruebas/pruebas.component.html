@@ -1,0 +1,4 @@
+<div>
+	<input type="text" placeholder="Ingresa un nombre" [(ngModel)]="name" />
+	<app-prueba [nombre]="name" (alerta)="crearAlerta($event)"></app-prueba>
+</div>

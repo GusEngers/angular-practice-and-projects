@@ -45,7 +45,10 @@ mat-card-actions button {
 	background-color: #eac614ff;
 }
 
+.equal_button {
+	background-color: #00e521ff;
+}
+
 .clear_button {
-	width: 145px;
 	background-color: #d32b2bff;
 }

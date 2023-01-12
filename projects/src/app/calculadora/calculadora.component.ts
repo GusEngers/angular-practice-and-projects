@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class CalculadoraComponent {
   operation: string = '+';
   result: number = 0;
+  first: string = '';
+  second: string = '';
   calc_but = [
     { value: 7, class: 'number_button' },
     { value: 8, class: 'number_button' },
@@ -22,7 +24,16 @@ export class CalculadoraComponent {
     { value: 3, class: 'number_button' },
     { value: '-', class: 'operation_button' },
     { value: 0, class: 'number_button' },
+    { value: '=', class: 'equal_button' },
     { value: 'C', class: 'clear_button' },
     { value: '+', class: 'operation_button' },
   ];
+
+  data = {
+    first: false,
+    operation: false,
+    second: false,
+  };
+
+  operations = () => {};
 }

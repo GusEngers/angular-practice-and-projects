@@ -19,5 +19,6 @@ export class HomeComponent {
       link: '/calculadora',
       name: 'Calculadora',
     },
+    { link: '/pruebas', name: 'Pruebas' },
   ];
 }
