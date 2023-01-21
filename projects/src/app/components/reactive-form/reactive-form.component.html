@@ -6,10 +6,10 @@
 		<mat-error *ngIf="name?.errors?.['required'] && name?.touched"
 			>El "Nombre" es obligatorio</mat-error
 		>
-		<mat-error *ngIf="name?.errors?.['minLength'] && name?.touched"
+		<mat-error *ngIf="name?.errors?.['minlength'] && name?.touched"
 			>El "Nombre" debe tener más de tres caracteres</mat-error
 		>
-		<mat-error *ngIf="name?.errors?.['maxLength'] && name?.touched"
+		<mat-error *ngIf="name?.errors?.['maxlength'] && name?.touched"
 			>El "Nombre" debe tener menos de diez caracteres</mat-error
 		>
 	</mat-form-field>
@@ -33,7 +33,7 @@
 		<mat-error *ngIf="password?.errors?.['required'] && password?.touched"
 			>La "Contraseña" es obligatoria</mat-error
 		>
-		<mat-error *ngIf="password?.errors?.['minLength'] && password?.touched"
+		<mat-error *ngIf="password?.errors?.['minlength'] && password?.touched"
 			>La "Contraseña" debe tener más de ocho caracteres</mat-error
 		>
 		<mat-error *ngIf="password?.errors?.['pattern'] && password?.touched"
