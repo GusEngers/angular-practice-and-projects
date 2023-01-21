@@ -1,1 +1,54 @@
-<p>reactive-form works!</p>
+<form [formGroup]="mainForm">
+	<h1>{{ mainForm.value | json }}</h1>
+	<mat-form-field appearance="outline">
+		<mat-label>Ingresa tu Nombre</mat-label>
+		<input matInput placeholder="Nombre" formControlName="name" />
+		<mat-error *ngIf="name?.errors?.['required'] && name?.touched"
+			>El "Nombre" es obligatorio</mat-error
+		>
+		<mat-error *ngIf="name?.errors?.['minLength'] && name?.touched"
+			>El "Nombre" debe tener más de tres caracteres</mat-error
+		>
+		<mat-error *ngIf="name?.errors?.['maxLength'] && name?.touched"
+			>El "Nombre" debe tener menos de diez caracteres</mat-error
+		>
+	</mat-form-field>
+	<mat-form-field appearance="outline">
+		<mat-label>Ingresa tu Email</mat-label>
+		<input matInput placeholder="Email" formControlName="email" />
+		<mat-error *ngIf="email?.errors?.['required'] && email?.touched"
+			>El "Email" es obligatorio</mat-error
+		>
+		<mat-error *ngIf="email?.errors?.['email'] && email?.touched"
+			>El "Email" tiene un formato invalido</mat-error
+		>
+	</mat-form-field>
+	<mat-form-field appearance="outline">
+		<mat-label>Ingresa tu Contraseña</mat-label>
+		<input
+			matInput
+			type="password"
+			placeholder="Contraseña"
+			formControlName="password" />
+		<mat-error *ngIf="password?.errors?.['required'] && password?.touched"
+			>La "Contraseña" es obligatoria</mat-error
+		>
+		<mat-error *ngIf="password?.errors?.['minLength'] && password?.touched"
+			>La "Contraseña" debe tener más de ocho caracteres</mat-error
+		>
+		<mat-error *ngIf="password?.errors?.['pattern'] && password?.touched"
+			>La "Contraseña" debe tener minúsculas, mayúsculas, números y
+			símbolos</mat-error
+		>
+	</mat-form-field>
+	<mat-form-field appearance="outline">
+		<mat-label>Ingresa tu Edad</mat-label>
+		<input matInput type="number" placeholder="Edad" formControlName="age" />
+		<mat-error *ngIf="age?.errors?.['required'] && age?.touched"
+			>La "Edad" es obligatoria</mat-error
+		>
+		<mat-error *ngIf="age?.errors?.['min'] && age?.touched"
+			>La "Edad" debe ser mayor a 18</mat-error
+		>
+	</mat-form-field>
+</form>
