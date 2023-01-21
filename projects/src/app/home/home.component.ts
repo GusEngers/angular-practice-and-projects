@@ -20,5 +20,6 @@ export class HomeComponent {
       name: 'Calculadora',
     },
     { link: '/pruebas', name: 'Pruebas' },
+    { link: '/reactive-form', name: 'Formulario Reactivo' },
   ];
 }

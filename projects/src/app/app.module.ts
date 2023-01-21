@@ -13,6 +13,7 @@ import { AngularMaterialModule } from '../material.module';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PruebaComponent } from './components/prueba/prueba.component';
     CalculadoraComponent,
     PruebasComponent,
     PruebaComponent,
+    ReactiveFormComponent,
   ],
   imports: [
     BrowserModule,
