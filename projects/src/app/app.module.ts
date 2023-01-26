@@ -15,6 +15,9 @@ import { PruebasComponent } from './components/pruebas/pruebas.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
+// Imports de Modulos
+import { MainAppModule } from './modules/main-app/main-app.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +37,7 @@ import { ReactiveFormComponent } from './components/reactive-form/reactive-form.
     AngularMaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    MainAppModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
