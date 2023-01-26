@@ -8,8 +8,8 @@
 	<mat-card-header>
 		<mat-card-title>{{ data.title }}</mat-card-title>
 	</mat-card-header>
-	<mat-divider [inset]="true"></mat-divider>
 	<mat-card-content>
+		<mat-divider [ngStyle]="{ marginBottom: '10px' }"></mat-divider>
 		<p>{{ data.description }}</p>
 		<mat-divider></mat-divider>
 	</mat-card-content>
