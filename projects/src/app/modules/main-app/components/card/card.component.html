@@ -6,15 +6,15 @@
 		color: 'white'
 	}">
 	<mat-card-header>
-		<mat-card-title>{{ data.title }}</mat-card-title>
+		<mat-card-title>{{ title }}</mat-card-title>
 	</mat-card-header>
 	<mat-card-content>
 		<mat-divider [ngStyle]="{ marginBottom: '10px' }"></mat-divider>
-		<p>{{ data.description }}</p>
+		<p>{{ description }}</p>
 		<mat-divider></mat-divider>
 	</mat-card-content>
 	<mat-card-actions>
-		<button mat-raised-button color="primary" [routerLink]="data.link">
+		<button mat-raised-button color="primary" [routerLink]="link">
 			ENTRAR
 		</button>
 	</mat-card-actions>

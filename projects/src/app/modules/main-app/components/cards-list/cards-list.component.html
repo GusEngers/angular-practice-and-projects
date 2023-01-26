@@ -1,0 +1,9 @@
+<mat-grid-list cols="4" rowHeight="250px">
+	<mat-grid-tile *ngFor="let project of projects">
+		<main-card
+			[title]="project.title"
+			[description]="project.description"
+			[link]="project.link">
+		</main-card>
+	</mat-grid-tile>
+</mat-grid-list>
