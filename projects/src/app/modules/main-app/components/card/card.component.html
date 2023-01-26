@@ -1,0 +1,21 @@
+<mat-card
+	[ngStyle]="{
+		maxWidth: '300px',
+		alignItems: 'center',
+		textAlign: 'center',
+		color: 'white'
+	}">
+	<mat-card-header>
+		<mat-card-title>{{ data.title }}</mat-card-title>
+	</mat-card-header>
+	<mat-divider [inset]="true"></mat-divider>
+	<mat-card-content>
+		<p>{{ data.description }}</p>
+		<mat-divider></mat-divider>
+	</mat-card-content>
+	<mat-card-actions>
+		<button mat-raised-button color="primary" [routerLink]="data.link">
+			ENTRAR
+		</button>
+	</mat-card-actions>
+</mat-card>

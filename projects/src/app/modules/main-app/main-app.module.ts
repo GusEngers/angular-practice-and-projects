@@ -6,10 +6,13 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MaterialModule } from '../material/material.module';
 // Routing Module
 import { AppRoutingModule } from '../../app-routing.module';
+// Components
+import { CardComponent } from './components/card/card.component';
+import { InfoComponent } from './components/info/info.component';
 
 @NgModule({
-  declarations: [NavBarComponent],
+  declarations: [NavBarComponent, CardComponent, InfoComponent],
   imports: [CommonModule, MaterialModule, AppRoutingModule],
-  exports: [NavBarComponent],
+  exports: [NavBarComponent, CardComponent],
 })
 export class MainAppModule {}
