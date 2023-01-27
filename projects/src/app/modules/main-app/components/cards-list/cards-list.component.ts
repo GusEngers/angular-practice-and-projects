@@ -14,31 +14,31 @@ export class CardsListComponent {
       title: 'Contador',
       description:
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.',
-      link: 'contador',
+      link: 'projects/contador',
     },
     {
       title: 'Lista de Usuarios',
       description:
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.',
-      link: 'user-list',
+      link: 'projects/user-list',
     },
     {
       title: 'Calculadora',
       description:
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.',
-      link: 'calculadora',
+      link: 'projects/calculadora',
     },
     {
       title: 'Pruebas',
       description:
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.',
-      link: 'pruebas',
+      link: 'projects/pruebas',
     },
     {
       title: 'Formulario Reactivo',
       description:
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.',
-      link: 'reactive-form',
+      link: 'projects/reactive-form',
     },
   ];
 }

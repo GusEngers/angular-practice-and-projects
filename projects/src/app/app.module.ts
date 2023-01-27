@@ -5,7 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador/contador.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserComponent } from './user/user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +17,7 @@ import { ReactiveFormComponent } from './components/reactive-form/reactive-form.
 
 // Imports de Modulos
 import { MainAppModule } from './modules/main-app/main-app.module';
+import { ProjectComponent } from './pages/project/project.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MainAppModule } from './modules/main-app/main-app.module';
     PruebasComponent,
     PruebaComponent,
     ReactiveFormComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
