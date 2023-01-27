@@ -18,6 +18,7 @@ import { ReactiveFormComponent } from './components/reactive-form/reactive-form.
 // Imports de Modulos
 import { MainAppModule } from './modules/main-app/main-app.module';
 import { ProjectComponent } from './pages/project/project.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ProjectComponent } from './pages/project/project.component';
     PruebaComponent,
     ReactiveFormComponent,
     ProjectComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
